@@ -3,7 +3,9 @@ def my_decorator(func):
         print("Preparing the stage for the function call...")
         func(*args, **kwargs)
         print("Tidying up the messes...")
+
     return wrapper
+
 
 @my_decorator
 def my_func(a, myprint=True):
